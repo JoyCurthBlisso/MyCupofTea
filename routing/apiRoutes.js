@@ -1,5 +1,5 @@
 var path = require('path');
-var cupoftea = require("../data/cupoftea.js")
+var cupoftea = require("../app/data/cupoftea.js")
 
 
 module.exports = function(app){
