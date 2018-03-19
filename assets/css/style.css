@@ -1,0 +1,59 @@
+h1 {
+  font-size: 36px;
+  margin-top:50px;
+  font-weight: bold;
+  font-family: 'Avenir', Times, Times New Roman, serif;
+  color: green; 
+  text-align: center;
+}
+
+
+#herbs
+{
+  height:100%;
+  width:100%;
+  text-align: center;
+}
+
+#timeRemaining
+{
+  text-align: center;
+  font-size:18px;
+}
+
+#start
+{
+  text-align: center;
+  font-size: 18px;
+
+}
+
+#submit
+{
+  text-align: center;
+  font-size: 18px;
+
+}
+
+#playAgain
+{
+  text-align: center !important;
+  font-size: 18px;
+
+}
+
+#results
+{
+  font-family: 'Avenir', Times, Times New Roman, serif !important;
+  font-size: 18px;
+}
+
+input
+{
+  margin-right: 10px;
+  margin-left:25px;
+  margin-top:5px;
+}
+
+
+
