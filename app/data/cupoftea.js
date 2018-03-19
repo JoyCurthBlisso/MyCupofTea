@@ -4,6 +4,7 @@ var Tea = [{
   photoURL: "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjzvPTg4fjZAhWCTN8KHcbtCTwQjRx6BAgAEAU&url=https%3A%2F%2Fchristianteaministries.wordpress.com%2F2013%2F04%2F26%2Fjoyful-fridays-t-g-i-f-pass-on-a-cup-of-joy%2F&psig=AOvVaw3aXUt143eewI3lQFdAnhdg&ust=1521561847604333",
   herbMatch: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
   },
+  {
   teaName: "Societe-a",
   photoURL: "",
   herbMatch: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
