@@ -5,7 +5,7 @@ var cupoftea = require("../app/data/cupoftea.js")
 module.exports = function(app){
 
   app.get('/api/cupoftea', function(req,res){
-    res.json(cupofteaList);
+    res.json(cupoftea);
   });
 
   app.post('/api/cupoftea', function(req,res){
@@ -26,5 +26,5 @@ module.exports = function(app){
    });
 
     res.json(mycupoftea);
-  	cupofteaList.push(req.body);
+  	cupoftea.push(req.body);
  };
