@@ -9,7 +9,7 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -148,7 +148,7 @@
 		<br>
 
 		<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
- Submit</button>
+ 		Submit</button>
 
 		<hr>
 	    <footer class="footer">
@@ -175,6 +175,16 @@
 	    </div>
 
 	  </div>
+
+	     <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/tea">Tea List</a> |
+                    <a href="https://github.com/joycurthblisso/mycupoftea">GitHub</a>
+                </p>
+            </div>
+        </footer>
+
 	</div>
 
   <script type="text/javascript">
@@ -208,19 +218,22 @@
 		if (validateForm() == true)
 		{
 			
-	    	var userData = {
+	    	var teaDrinkerData = {
 	    		name: $("#name").val(),
 	    		photo: $("#photo").val(),
 	    		scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
 	    	}
+
 	    
 	    	var currentURL = window.location.origin;
 	     
-	    	$.post(currentURL + "/api/tea", userData, function(data){
+	    	$.post(currentURL + "/api/cupoftea", teaDrinkerData, function(data){
 	    	
 	    		$("#matchName").text(data.name);
 	    		$('#matchImg').attr("src", data.photo); 
 		    	$("#resultsModal").modal('toggle');
+
+	
 	    	});
 		}
 		else

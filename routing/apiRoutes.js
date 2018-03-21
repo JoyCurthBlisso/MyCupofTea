@@ -10,8 +10,21 @@ module.exports = function(app){
 
   app.post('/api/cupoftea', function(req,res){
     
+     var lowestDiff = 50;
+        var mycupoftea;
+        cupoftea.forEach(function (teascores) {
+            var diff = 0;
+            for (i = 0; i < teascores.scores.length; i++) {
+                diff += Math.abs(teascores.scores[i] - req.body.scores[i]);
+            } 
+            if (difference < lowestDiff) {
+                lowestDiff = diff;
+                mycupoftea = teascores;
+            }
  
-
-    cupofteaList.push(req.body);
+    
    });
+
+    res.json(mycupoftea);
+  	cupofteaList.push(req.body);
  };
